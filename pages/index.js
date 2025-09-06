@@ -4,7 +4,7 @@ export async function getServerSideProps() {
   // Read on the server at runtime in Amplify (SSR Lambda)
   const serverVars = {
     // Example names – set these in Amplify to test
-    RUNTIME_FOO: process.env.RUNTIME_FOO || null,
+    RUNTIME_FOO: process.env.NEXT_PUBLIC_RUNTIME_FOO || null,
     SERVER_SECRET: process.env.SERVER_SECRET || null,
   };
 
