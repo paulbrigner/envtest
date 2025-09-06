@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - env | grep -e MY_SECRET_API_KEY >> .env.production
         - npm ci || npm install
     build:
       commands:
