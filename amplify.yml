@@ -6,6 +6,7 @@ frontend:
         - npm ci || npm install
     build:
       commands:
+        - env | grep -e RUNTIME_FOO >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
